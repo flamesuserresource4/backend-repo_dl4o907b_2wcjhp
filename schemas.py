@@ -41,8 +41,12 @@ class Product(BaseModel):
 # Add your own schemas here:
 # --------------------------------------------------
 
-# Note: The Flames database viewer will automatically:
-# 1. Read these schemas from GET /schema endpoint
-# 2. Use them for document validation when creating/editing
-# 3. Handle all database operations (CRUD) directly
-# 4. You don't need to create any database endpoints!
+class Prompt(BaseModel):
+    """
+    Family-friendly Would You Rather prompts
+    Collection name: "prompt"
+    """
+    option_a: str = Field(..., min_length=3, max_length=140, description="First option text")
+    option_b: str = Field(..., min_length=3, max_length=140, description="Second option text")
+    category: str = Field("general", description="Category like general, silly, outdoor, chores")
+    created_by: Optional[str] = Field(None, description="Name or source of the prompt")

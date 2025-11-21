@@ -1,0 +1,15 @@
+INFO:     Will watch for changes in these directories: ['/home/workspace']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [145] using StatReload
+INFO:     Started server process [147]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     172.20.0.1:59566 - "GET /api/prompts/random HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:59568 - "GET /api/prompts/random HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:59582 - "GET /api/prompts/top?limit=5 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:59588 - "GET /api/prompts/top?limit=5 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:59598 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:37224 - "GET /api/prompts/random HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37232 - "GET /api/prompts/random HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37246 - "GET /api/prompts/top?limit=5 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37236 - "GET /api/prompts/top?limit=5 HTTP/1.1" 500 Internal Server Error
